@@ -128,9 +128,7 @@ def gameLoop():
     pygame.mouse.set_visible(0)
     perdiste=False
     contadorfuente=pygame.font.Font(None,50)
-    iniciojuego=True
-    abc=1
-    
+
 
     while not perdiste:
                       
@@ -255,7 +253,7 @@ def gameLoop():
         if(ataque==1):
             misil.rect.x=misilx
             misil.rect.y=misil.rect.y-9
-            if (misil.rect.y<30):
+            if (misil.rect.y<110):
                 misil.rect.y=450
                 ataque=0
 
